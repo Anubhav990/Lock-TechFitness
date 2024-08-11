@@ -8,15 +8,14 @@ import virtualReality from '../assets/contentIcons/vrIcon.svg';
 
 function TechContent({
     imgBg = fitnessZpp,
-    imgBgalt = "FitnessTech",
+    imgBgAlt = "FitnessTech",
     sIcon1 = smartDevice,
-    sIconAlt = "Smart Devices",
+    sIconAlt1 = "Smart Devices",
     sIcon2 = massager,
-    sIcon2Alt = "Massager Recovery",
+    sIconAlt2 = "Massager Recovery",
     sIcon3 = virtualReality,
-    sIcon3Alt = "Virtual Fitness"
+    sIconAlt3 = "Virtual Fitness"
 }) {
-
     const [session, setSession] = useState(null);
     const navigate = useNavigate();
 
@@ -32,41 +31,39 @@ function TechContent({
         getSession();
     }, []);
 
-
-    const handleLearMoreClick = () => {
+    const handleLearnMoreClick = () => {
         if (session) {
             navigate('/TechBlog');
         } else {
-            navigate('About');
+            navigate('/About');
         }
     };
-
 
     // Array of tech cards
     const techCards = [
         {
             id: 'tech-1',
             iconSrc: sIcon1,
-            iconAlt: sIconAlt,
+            iconAlt: sIconAlt1,
             title: "Smart Devices",
             description: "Leverage smart tech to boost your health and fitness. Discover AI-powered devices that support your fitness journey.",
-            backgroundT: 'bg-smartdevices',
+            background: 'bg-smartdevices',
         },
         {
             id: 'tech-2',
             iconSrc: sIcon2,
-            iconAlt: sIcon2Alt,
+            iconAlt: sIconAlt2,
             title: "Massagers/Massage Guns",
             description: "Explore the benefits and optimal use of massagers and massage guns for relaxation and muscle recovery.",
-            backgroundT: 'bg-massager',
+            background: 'bg-massager',
         },
         {
             id: 'tech-3',
             iconSrc: sIcon3,
-            iconAlt: sIcon3Alt,
+            iconAlt: sIconAlt3,
             title: "Virtual Reality Fitness",
             description: "Immerse yourself in dynamic Virtual Reality Fitness and learn how to use advanced VR tech to stay fit.",
-            backgroundT: 'bg-virtual',
+            background: 'bg-virtual',
         },
     ];
 
@@ -81,7 +78,7 @@ function TechContent({
                         <div className="h-1 w-20 bg-indigo-500 rounded mx-auto lg:mx-0"></div>
                     </div>
                     <p className="lg:w-1/2 w-full leading-relaxed text-gray-500 text-center md:text-center font-medium md:text-[20px] md:pt-4">
-                        Transform Your Health with Smart Devices, Relaxation and VR Fitness!
+                        Transform Your Health with Smart Devices, Relaxation, and VR Fitness!
                     </p>
                 </div>
             </div>
@@ -91,18 +88,18 @@ function TechContent({
                     <img
                         className="object-cover object-center h-full w-full"
                         src={imgBg}
-                        alt={imgBgalt}
+                        alt={imgBgAlt}
                     />
                 </div>
                 <div className="flex flex-col flex-wrap lg:py-6 lg:w-1/2 lg:pl-12 text-center lg:text-left">
                     <div className="flex flex-col gap-10 lg:items-start items-center">
-                        {techCards.map(({ id, iconSrc, iconAlt, title, description, backgroundT }) => (
+                        {techCards.map(({ id, iconSrc, iconAlt, title, description, background }) => (
                             <div
                                 key={id}
-                                className="relative group border border-gray-200 p-6 rounded-lg flex flex-col items-center text-center border-indigo-100 bg-white shadow-lg shadow-gray-400 hover:scale-105 transition-transform duration-300 overflow-hidden"
+                                className="relative group border border-gray-200 p-6 rounded-lg flex flex-col items-center text-center border-indigo-100 bg-white shadow-lg shadow-gray-400 transition-transform duration-300 overflow-hidden hover:scale-105"
                             >
                                 {/* Background Image */}
-                                <div className={`absolute inset-0 bg-cover bg-center transition-opacity duration-300 ease-in-out ${backgroundT} group-hover:opacity-30`} />
+                                <div className={`absolute inset-0 bg-cover bg-center transition-opacity duration-300 ease-in-out ${background} group-hover:opacity-30 md:opacity-0`} />
 
                                 {/* Card Content */}
                                 <div className="relative z-10 flex flex-col items-center">
@@ -116,7 +113,7 @@ function TechContent({
                                     </div>
                                     <h2 className="text-gray-900 text-lg title-font font-medium mb-3">{title}</h2>
                                     <p className="leading-relaxed text-gray-900 md:text-gray-500 font-medium group-hover:text-black text-base">{description}</p>
-                                    <button onClick={handleLearMoreClick} className="mt-3 text-white inline-flex items-center bg-black border-0 py-2 px-4 rounded-lg group-hover:bg-indigo-500 group-hover:text-white group-hover:border-none transition-all duration-75 ease-in">
+                                    <button onClick={handleLearnMoreClick} className="mt-3 text-white inline-flex items-center bg-black border-0 py-2 px-4 rounded-lg group-hover:bg-indigo-500 group-hover:text-white transition-all duration-75 ease-in">
                                         Learn More
                                     </button>
                                 </div>
