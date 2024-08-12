@@ -98,7 +98,7 @@ function Content({
     ];
 
     return (
-        <section className="text-gray-900 md:text-gray-600 body-font bg-white md:bg-gradient-to-b md:from-white md:to-blue-50 rounded-lg">
+        <section className="text-gray-900 md:text-gray-600 body-font bg-white md:bg-gradient-to-b md:from-white md:via-blue-50 md:to-blue-100 rounded-lg">
             <div className="container px-5 md:pt-28 pt-16 pb-4 md:pb-16 mx-auto">
                 <div className="flex flex-wrap w-full mb-14 md:mb-20 flex-col items-center text-center">
                     <h1 className="sm:text-3xl text-2xl font-medium title-font mb-6 md:mb-2 text-gray-900">Transform Your Body and Mind with Advanced Fitness Insights and Tech</h1>
