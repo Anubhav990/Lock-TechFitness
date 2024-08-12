@@ -108,7 +108,7 @@ function Content({
                     {cards.map(({ id, iconSrc, iconAlt, title, description, background }) => (
                         <div key={id} className="xl:w-1/3 md:w-1/2 p-4 hover:scale-110 transition-all duration-75 ease-in rounded-lg cursor-pointer group relative">
                             <div className="border border-indigo-100 p-6 rounded-lg bg-white shadow-lg shadow-gray-400 relative overflow-hidden">
-                                <div className={`absolute inset-0 ${background} bg-no-repeat bg-cover bg-center group-hover:opacity-40 opacity-0 transition-opacity duration-300`}></div>
+                                <div className={`absolute inset-0 ${background} bg-no-repeat bg-cover bg-center opacity-30 group-hover:opacity-40 md:opacity-0 transition-opacity duration-300`}></div>
 
                                 <div className="relative z-10">
                                     <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
