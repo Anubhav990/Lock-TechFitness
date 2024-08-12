@@ -88,7 +88,7 @@ function LogIn() {
                     <div className="text-center">
                         <div className="flex flex-col items-center justify-center mb-4 md:mb-6 text-lg md:text-2xl font-semibold text-gray-900 dark:text-white">
                             <img className="w-10 h-10 md:w-12 md:h-12 mb-2" src={mainLogo} alt="LockTechFitness" />
-                            <span className="text-center">Lock-Tech Fitness</span>
+                            <span className="text-center text-black">Lock-Tech Fitness</span>
                         </div>
                         <h1 className="text-xl md:text-2xl font-bold mb-4">Log In</h1>
                         <p className="mb-4 md:mb-6 text-gray-600 text-sm md:text-base leading-relaxed px-2 md:px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg shadow-sm">
