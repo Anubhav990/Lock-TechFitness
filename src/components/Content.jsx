@@ -53,7 +53,7 @@ function Content({
             iconAlt: iconAlt1,
             title: "Cardiovascular Health",
             description: "Represents cardiovascular health, focusing on exercises and tips for improving heart health and endurance.",
-            background: '/public/images/heartBg.webp' // Replace with your actual background class
+            background: 'bg-heart' // Replace with your actual background class
         },
         {
             id: 'bodybuilding',
@@ -61,7 +61,7 @@ function Content({
             iconAlt: iconAlt2,
             title: "Bodybuilding Gems",
             description: "Highlights key tips & insights for bodybuilding, including workout routines and techniques to build muscle.",
-            background: '/public/images/bodybuildBg.webp' // Replace with your actual background class
+            background: 'bg-bodybuilding' // Replace with your actual background class
         },
         {
             id: 'bodyweight',
@@ -69,7 +69,7 @@ function Content({
             iconAlt: iconAlt3,
             title: "Bodyweight Exercises",
             description: "Showcases exercises that use body weight as resistance, ideal for strength training and functional fitness.",
-            background: '/public/images/BodyweightBg.webp' // Replace with your actual background class
+            background: 'bg-bodyweight' // Replace with your actual background class
         },
         {
             id: 'diet',
@@ -77,7 +77,7 @@ function Content({
             iconAlt: iconAlt4,
             title: "Diet - Food - Supplements",
             description: "Covers essential information on diet, nutrition & supplements to support your fitness and health goals.",
-            background: '/public/images/dietBg.webp' // Replace with your actual background class
+            background: 'bg-diet' // Replace with your actual background class
         },
         {
             id: 'sleep',
@@ -85,7 +85,7 @@ function Content({
             iconAlt: iconAlt5,
             title: "Sleep",
             description: "Emphasizes the importance of sleep for recovery and overall health, offering tips for improving sleep quality.",
-            background: '/public/images/sleepBg.webp' // Replace with your actual background class
+            background: 'bg-sleep' // Replace with your actual background class
         },
         {
             id: 'resistance',
@@ -93,7 +93,7 @@ function Content({
             iconAlt: iconAlt6,
             title: "Resistance Training",
             description: "Explore resistance training with a focus on strength, hypertrophy & endurance to boost muscle growth and performance.",
-            background: '/public/images/resistanceBg.webp' // Replace with your actual background class
+            background: 'bg-resistance' // Replace with your actual background class
         }
     ];
 
@@ -108,10 +108,7 @@ function Content({
                     {cards.map(({ id, iconSrc, iconAlt, title, description, background }) => (
                         <div key={id} className="xl:w-1/3 md:w-1/2 p-4 hover:scale-110 transition-all duration-75 ease-in rounded-lg cursor-pointer group relative">
                             <div className="border border-indigo-100 p-6 rounded-lg bg-white shadow-lg shadow-gray-400 relative overflow-hidden">
-                                <div
-                                    className="absolute inset-0 bg-no-repeat bg-cover bg-center opacity-30 group-hover:opacity-40 transition-opacity duration-300"
-                                    style={{ backgroundImage: `url(${background})` }} // Use inline style for background image
-                                ></div>
+                                <div className={`absolute inset-0 ${background} bg-no-repeat bg-cover bg-center opacity-30 group-hover:opacity-40 md:opacity-0 transition-opacity duration-300`}></div>
 
                                 <div className="relative z-10">
                                     <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
