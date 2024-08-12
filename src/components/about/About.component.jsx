@@ -1,8 +1,8 @@
 import mainLogo from '../../assets/mainlogo.svg';
-import testosterone from '../../assets/contentIcons/testosterone.svg';
-import productivity from '../../assets/contentIcons/productivity.svg';
-import confidence from '../../assets/contentIcons/confidence.svg';
-import intellectual from '../../assets/contentIcons/intellectual.svg';
+import testosterone from '/aboutsvgs/testosterone.svg';
+import productivity from '/aboutsvgs/productivity.svg';
+import confidence from '/aboutsvgs/confidence.svg';
+import intellectual from '/aboutsvgs/intellectual.svg';
 
 const steps = [
     {

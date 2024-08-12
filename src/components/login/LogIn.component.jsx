@@ -66,7 +66,7 @@ function LogIn() {
     // };
 
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen md:bg-gradient-to-b from-white via-blue-50 to-blue-100 p-4 md:p-6 rounded-lg">
+        <div className="flex flex-col items-center justify-center my-6 md:my-0 md:min-h-screen md:bg-gradient-to-b from-white via-blue-50 to-blue-100 p-4 md:p-6 rounded-lg">
             <div className="bg-white md:shadow-lg shadow-xl rounded-lg p-6 md:p-8 max-w-sm w-full">
                 {/* 
                 This logic displays content based on the user's authentication status. 
