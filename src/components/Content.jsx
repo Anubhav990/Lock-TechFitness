@@ -134,7 +134,7 @@ function Content({
                         Explore Now!
                     </button>
                 ) : (
-                    <div className="flex flex-col items-center mt-8 md:mt-12 bg-blue-100 md:bg-none rounded-2xl p-4">
+                    <div className="flex flex-col items-center mt-8 md:mt-12 bg-blue-100 md:bg-transparent rounded-2xl p-4">
                         <p className="mb-6 md:mb-4 text-gray-800">Sign up for Free to Access Premium Fitness Insights!</p>
                         <div className="flex space-x-4">
                             <button
