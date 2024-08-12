@@ -15,7 +15,6 @@ import GoToTop from './gotoTopOnRouting/GoToTop.component';
 function App() {
   return (
     <>
-      <GoToTop />
       <Routes>
         <Route path='/' element={< Layout />}>
           <Route index element={<Home />} />
