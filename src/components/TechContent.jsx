@@ -78,7 +78,7 @@ function TechContent({
                         <div className="h-1 w-20 bg-indigo-500 rounded mx-auto lg:mx-0"></div>
                     </div>
                     <p className="lg:w-1/2 w-full leading-relaxed text-gray-500 text-center md:text-center font-medium md:text-[20px] md:pt-4">
-                        Transform Your Health with Smart Devices, Relaxation, and VR Fitness!
+                        Transform Your Health with Smart Devices, Relaxation and VR Fitness!
                     </p>
                 </div>
             </div>
@@ -86,7 +86,7 @@ function TechContent({
             <div className="container px-5 pb-14 md:pb-16 mx-auto flex flex-wrap">
                 <div className="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
                     <img
-                        className="object-cover object-center h-full w-full"
+                        className="object-cover object-center h-full w-full hidden md:block"
                         src={imgBg}
                         alt={imgBgAlt}
                     />
@@ -96,7 +96,7 @@ function TechContent({
                         {techCards.map(({ id, iconSrc, iconAlt, title, description, background }) => (
                             <div
                                 key={id}
-                                className="relative group border border-gray-200 p-6 rounded-lg flex flex-col items-center text-center border-indigo-100 bg-white shadow-lg shadow-gray-400 transition-transform duration-300 overflow-hidden hover:scale-105"
+                                className="relative group border p-6 rounded-lg flex flex-col items-center text-center border-indigo-100 bg-white shadow-lg shadow-gray-400 transition-transform duration-300 overflow-hidden hover:scale-105"
                             >
                                 {/* Background Image */}
                                 <div className={`absolute inset-0 bg-cover bg-center transition-opacity duration-300 ease-in-out ${background} group-hover:opacity-30 opacity-30  md:opacity-0`} />
