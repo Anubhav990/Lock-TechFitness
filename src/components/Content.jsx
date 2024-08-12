@@ -53,7 +53,7 @@ function Content({
             iconAlt: iconAlt1,
             title: "Cardiovascular Health",
             description: "Represents cardiovascular health, focusing on exercises and tips for improving heart health and endurance.",
-            background: '../../public/images/heartBg.webp' // Replace with your actual background class
+            background: '/public/images/heartBg.webp' // Replace with your actual background class
         },
         {
             id: 'bodybuilding',
@@ -61,7 +61,7 @@ function Content({
             iconAlt: iconAlt2,
             title: "Bodybuilding Gems",
             description: "Highlights key tips & insights for bodybuilding, including workout routines and techniques to build muscle.",
-            background: '../../public/images/bodybuildBg.webp' // Replace with your actual background class
+            background: '/public/images/bodybuildBg.webp' // Replace with your actual background class
         },
         {
             id: 'bodyweight',
@@ -69,7 +69,7 @@ function Content({
             iconAlt: iconAlt3,
             title: "Bodyweight Exercises",
             description: "Showcases exercises that use body weight as resistance, ideal for strength training and functional fitness.",
-            background: '../../public/images/BodyweightBg.webp' // Replace with your actual background class
+            background: '/public/images/BodyweightBg.webp' // Replace with your actual background class
         },
         {
             id: 'diet',
@@ -77,7 +77,7 @@ function Content({
             iconAlt: iconAlt4,
             title: "Diet - Food - Supplements",
             description: "Covers essential information on diet, nutrition & supplements to support your fitness and health goals.",
-            background: '../../public/images/dietBg.webp' // Replace with your actual background class
+            background: '/public/images/dietBg.webp' // Replace with your actual background class
         },
         {
             id: 'sleep',
@@ -85,7 +85,7 @@ function Content({
             iconAlt: iconAlt5,
             title: "Sleep",
             description: "Emphasizes the importance of sleep for recovery and overall health, offering tips for improving sleep quality.",
-            background: '../../public/images/sleepBg.webp' // Replace with your actual background class
+            background: '/public/images/sleepBg.webp' // Replace with your actual background class
         },
         {
             id: 'resistance',
@@ -93,7 +93,7 @@ function Content({
             iconAlt: iconAlt6,
             title: "Resistance Training",
             description: "Explore resistance training with a focus on strength, hypertrophy & endurance to boost muscle growth and performance.",
-            background: '../../public/images/sleepBg.webp' // Replace with your actual background class
+            background: '/public/images/resistanceBg.webp' // Replace with your actual background class
         }
     ];
 
