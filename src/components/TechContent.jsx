@@ -35,7 +35,7 @@ function TechContent({
         if (session) {
             navigate('/TechBlog');
         } else {
-            navigate('/About');
+            navigate('/SignUp');
         }
     };
 
