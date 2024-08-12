@@ -99,7 +99,7 @@ function TechContent({
                                 className="relative group border border-gray-200 p-6 rounded-lg flex flex-col items-center text-center border-indigo-100 bg-white shadow-lg shadow-gray-400 transition-transform duration-300 overflow-hidden hover:scale-105"
                             >
                                 {/* Background Image */}
-                                <div className={`absolute inset-0 bg-cover bg-center transition-opacity duration-300 ease-in-out ${background} group-hover:opacity-30 md:opacity-0`} />
+                                <div className={`absolute inset-0 bg-cover bg-center transition-opacity duration-300 ease-in-out ${background} group-hover:opacity-30 opacity-0`} />
 
                                 {/* Card Content */}
                                 <div className="relative z-10 flex flex-col items-center">
