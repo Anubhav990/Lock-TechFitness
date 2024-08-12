@@ -109,7 +109,7 @@ function Content({
                         <div key={id} className="xl:w-1/3 md:w-1/2 p-4 hover:scale-110 transition-all duration-75 ease-in rounded-lg cursor-pointer group relative">
                             <div className="border border-indigo-100 p-6 rounded-lg bg-white shadow-lg shadow-gray-400 relative overflow-hidden">
                                 <div
-                                    className="absolute inset-0 bg-no-repeat bg-cover bg-center opacity-30 md:opacity-0 group-hover:opacity-40 transition-opacity duration-300"
+                                    className="absolute inset-0 bg-no-repeat bg-cover bg-center opacity-30 group-hover:opacity-40 transition-opacity duration-300"
                                     style={{ backgroundImage: `url(${background})` }} // Use inline style for background image
                                 ></div>
 
