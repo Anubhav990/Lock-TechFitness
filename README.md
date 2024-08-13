@@ -67,16 +67,14 @@ npm run dev
 
 # Components
 
-Standalone Components
-These components are directly located in the components/ folder:
+Standalone Components: These components are directly located in the components/ folder:
 
 - Content.jsx
 - FAQ.jsx
 - FAQTWO.jsx
 - TechContent.jsx
 
-Folder-Based Components
-These components are organized within nested folders inside the components/ folder:
+Folder-Based Components: These components are organized within nested folders inside the components/ folder:
 
 - About.
 - blog
