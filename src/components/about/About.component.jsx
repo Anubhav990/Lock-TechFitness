@@ -48,7 +48,7 @@ function About() {
                     <h1 className="text-2xl font-medium title-font mb-4 text-blue-500">
                         About Us
                     </h1>
-                    <p className="lg:w-2/3 mx-auto leading-relaxed text-base font-medium md:text-[16px] text-[14px]">
+                    <p className="lg:w-2/3 mx-auto leading-relaxed text-base font-medium md:text-[16px] text-[12px]">
                         At Lock-Tech Fitness, we provide top fitness insights and tips to help you achieve your goals. Our mission is to leverage technology to enhance performance and maximize gains. Whether you're a beginner or an experienced athlete, our expert advice and innovative strategies will elevate your fitness journey. Join us in exploring the intersection of fitness and technology!
                     </p>
                 </div>
