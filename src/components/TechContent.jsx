@@ -69,8 +69,8 @@ function TechContent({
 
     return (
         <section className="text-gray-600 body-font">
-            <div className="container px-5 pt-12 md:pt-20 pb-6 mx-auto">
-                <div className="flex flex-wrap w-full md:mb-16">
+            <div className="container px-5 pt-12 md:pt-20 pb-2 mx-auto">
+                <div className="flex flex-wrap w-full md:mb-8">
                     <div className="lg:w-1/2 w-full mb-8 md:mb-6 lg:mb-0">
                         <h1 className="text-3xl font-medium title-font mb-2 text-gray-900 text-center lg:text-left">
                             Achieve Your Fitness Goals with Smart Tech Solutions
