@@ -102,7 +102,8 @@ function Content({
             <div className="container px-5 md:pt-28 pt-16 pb-4 md:pb-16 mx-auto">
                 <div className="flex flex-wrap w-full mb-6 md:mb-20 flex-col items-center text-center">
                     <h1 className="sm:text-3xl text-2xl font-medium title-font mb-6 md:mb-2 text-gray-900">Transform Your Body and Mind with Advanced Fitness Insights and Tech</h1>
-                    <p className="lg:w-3/4 w-full leading-relaxed text-gray-500 font-medium">Discover expert fitness advice, advanced hypertrophy tips and how to use technology to enhance your health journey.</p>
+                    <p className="lg:w-3/4 w-full text-sm md:text-base leading-relaxed text-gray-500 font-medium">
+                        Explore expert fitness advice, hypertrophy tips and tech tools to boost your health journey.</p>
                 </div>
                 <div className="flex flex-wrap -m-4">
                     {cards.map(({ id, iconSrc, iconAlt, title, description, background }) => (
@@ -135,7 +136,7 @@ function Content({
                     </button>
                 ) : (
                     <div className="flex flex-col items-center mt-8 md:mt-12 bg-blue-100 md:bg-transparent rounded-2xl p-4">
-                        <p className="mb-6 md:mb-4 text-gray-800">Sign up for Free to Access Premium Fitness Insights!</p>
+                        <p className="mb-4 text-gray-800">Sign up for Free to Access Premium Fitness Insights!</p>
                         <div className="flex space-x-4">
                             <button
                                 className="text-white text-lg bg-black border-0 py-2 px-8 focus:outline-none hover:bg-indigo-500 transition-all duration-75 ease-in rounded-lg shadow-md hover:shadow-lg transform hover:scale-105"
