@@ -86,10 +86,7 @@ function Header({ logoName = "Lock-Tech Fitness", logoSrc = mainlogo, logoAlt = 
                             <>
                                 <NavLink
                                 to="/SignUp"
-                                className={({ isActive }) => 
-                                `rounded-md bg-transparent px-3 py-2 text-sm font-semibold 
-                                 ${isActive ? "bg-black/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black scale-105" 
-                                 : "text-black hover:bg-black/10"} cursor-pointer`}
+                                className=  {({isActive}) => `rounded-md px-3 py-2 text-sm font-semibold ${isActive ? "text-black bg-black/10" : "text-black bg-transparent"} hover:bg-black/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black hover:scale-105 cursor-pointer`}
                                 >
                                  {btnText1}
                                 </NavLink>
@@ -99,7 +96,7 @@ function Header({ logoName = "Lock-Tech Fitness", logoSrc = mainlogo, logoAlt = 
                                 className={({ isActive }) => 
                                 `rounded-md border border-black px-3 py-2 text-sm font-semibold 
                                 ${isActive ? "bg-indigo-500 border-none text-white" 
-                                : "text-black shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black hover:bg-indigo-500 hover:border-none hover:text-white"} 
+                                : "text-black shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"}  hover:bg-indigo-500 hover:border-none hover:text-white
                                  transition-all duration-100 ease-in-out cursor-pointer`}
                                 >
                                 {btnText2}
