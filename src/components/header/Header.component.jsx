@@ -50,23 +50,24 @@ function Header({ logoName = "Lock-Tech Fitness", logoSrc = mainlogo, logoAlt = 
                             <li>
                                 <NavLink
                                     to="/"
-                                    className="inline-flex items-center text-sm font-semibold text-gray-800 hover:text-gray-900 hover:scale-110 cursor-pointer"
+                                    className={({ isActive }) => `inline-flex items-center text-sm font-semibold ${isActive ? "text-blue-500" : "text-gray-800"} hover:text-gray-900 hover:scale-110 cursor-pointer`}
                                 >
                                     Home
                                 </NavLink>
                             </li>
                             <li>
-                                <Link
+                                <NavLink
                                     to="/About"
-                                    className="inline-flex items-center text-sm font-semibold text-gray-800 hover:text-gray-900 hover:scale-110 cursor-pointer"
+                                    className={({isActive}) => `inline-flex items-center text-sm font-semibold ${isActive ? "text-blue-500" : "text-gray-800"} hover:text-gray-900 hover:scale-110 cursor-pointer`}
                                 >
                                     About
-                                </Link>
+                                </NavLink>
                             </li>
                             <li>
                                 <NavLink
                                     to="/FAQTwo"
-                                    className="inline-flex items-center text-sm font-semibold text-gray-800 hover:text-gray-900 hover:scale-110 cursor-pointer"
+                                    className={({isActive}) => `inline-flex items-center text-sm font-semibold ${isActive ? "text-blue-500" : "text-gray-800"} hover:text-gray-900 hover:scale-110 cursor-pointer`}
+                                    inline-flex items-center text-sm font-semibold text-gray-800 hover:text-gray-900 hover:scale-110 cursor-pointer
                                 >
                                     FAQs
                                 </NavLink>
@@ -83,18 +84,26 @@ function Header({ logoName = "Lock-Tech Fitness", logoSrc = mainlogo, logoAlt = 
                             </button>
                         ) : (
                             <>
-                                <Link
-                                    to="/SignUp"
-                                    className="rounded-md bg-transparent px-3 py-2 text-sm font-semibold text-black hover:bg-black/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black hover:scale-105 cursor-pointer"
+                                <NavLink
+                                to="/SignUp"
+                                className={({ isActive }) => 
+                                `rounded-md bg-transparent px-3 py-2 text-sm font-semibold 
+                                 ${isActive ? "bg-black/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black scale-105" 
+                                 : "text-black hover:bg-black/10"} cursor-pointer`}
                                 >
-                                    {btnText1}
-                                </Link>
-                                <Link
-                                    to="/LogIn"
-                                    className="rounded-md border border-black px-3 py-2 text-sm font-semibold text-black shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black cursor-pointer hover:bg-indigo-500 hover:border-none hover:text-white transition-all duration-100 ease-in-out"
+                                 {btnText1}
+                                </NavLink>
+
+                                <NavLink
+                                to="/LogIn"
+                                className={({ isActive }) => 
+                                `rounded-md border border-black px-3 py-2 text-sm font-semibold 
+                                ${isActive ? "bg-indigo-500 border-none text-white" 
+                                : "text-black shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black hover:bg-indigo-500 hover:border-none hover:text-white"} 
+                                 transition-all duration-100 ease-in-out cursor-pointer`}
                                 >
-                                    {btnText2}
-                                </Link>
+                                {btnText2}
+                                </NavLink>
                             </>
                         )}
                     </div>
@@ -148,13 +157,13 @@ function Header({ logoName = "Lock-Tech Fitness", logoSrc = mainlogo, logoAlt = 
                                 </NavLink>
                             </li>
                             <li>
-                                <Link
+                                <NavLink
                                     to="/About"
                                     className="text-sm font-semibold text-gray-800 hover:text-gray-900"
                                     onClick={() => setMenuOpen(false)} // Close menu on link click
                                 >
                                     About
-                                </Link>
+                                </NavLink>
                             </li>
                             <li>
                                 <NavLink
@@ -178,20 +187,20 @@ function Header({ logoName = "Lock-Tech Fitness", logoSrc = mainlogo, logoAlt = 
                                     </button>
                                 ) : (
                                     <>
-                                        <Link
+                                        <NavLink
                                             to="/SignUp"
                                             className="text-sm font-semibold text-blue-500 hover:text-gray-900"
                                             onClick={() => setMenuOpen(false)} // Close menu on link click
                                         >
                                             {btnText1}
-                                        </Link>
-                                        <Link
+                                        </NavLink>
+                                        <NavLink
                                             to="/LogIn"
                                             className="text-sm font-semibold text-blue-500 hover:text-gray-900"
                                             onClick={() => setMenuOpen(false)} // Close menu on link click
                                         >
                                             {btnText2}
-                                        </Link>
+                                        </NavLink>
                                     </>
                                 )}
                             </li>
