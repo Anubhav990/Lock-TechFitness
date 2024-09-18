@@ -103,7 +103,7 @@ function Content({
                 <div className="flex flex-wrap w-full mb-6 md:mb-20 flex-col items-center text-center">
                     <h1 className="sm:text-3xl text-2xl font-medium title-font mb-6 md:mb-2 text-gray-900">Transform Your Body and Mind with Advanced Fitness Insights and Tech</h1>
                     <p className="lg:w-3/4 w-full text-sm md:text-base leading-relaxed text-gray-500 font-medium">
-                        Explore expert fitness advice, hypertrophy tips and tech tools to boost your health journey.</p>
+                        Learn key fitness tips in the categories below to improve your health &  performance.</p>
                 </div>
                 <div className="flex flex-wrap -m-4">
                     {cards.map(({ id, iconSrc, iconAlt, title, description, background }) => (
